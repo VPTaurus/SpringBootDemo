@@ -1,13 +1,21 @@
-package com.example.demo.student;
+package com.example.demo.model;
 
 
+
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
+@Setter
+@Getter
+@AllArgsConstructor
+
+
 @Entity
 @Table
+@Builder
 public class Student {
     @Id
     @SequenceGenerator(
